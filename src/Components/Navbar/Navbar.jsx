@@ -15,10 +15,11 @@ export default function Navbar() {
 
     return (
         <>
+            {/* Desktop Navbar */}
             <Box className={styles.desktop_navbar} position={"sticky"} top="0px" zIndex={1000} bg="#b0c0bc" padding={"20px"} w="100%" margin={"auto"} display="flex" justifyContent={"space-between"}>
 
                 <Box display={"flex"} justifyContent="center" alignItems={"center"}>
-                    <Text fontSize={"22px"} fontWeight={700} color="#0fe43d">UMER</Text>
+                    <Text fontSize={"22px"} fontWeight={700} color="#64d87d">UMER</Text>
                     <Text fontSize={"22px"} fontWeight={700} color="#e21717">AHMAD</Text>
                 </Box>
 
@@ -54,10 +55,13 @@ export default function Navbar() {
                 </Box>
             </Box>
 
+
+
+            {/* Mobile and Tab Navbar */}
             <Box bg="#b0c0bc" className={styles.mobile_navbar} justifyContent="space-between" position={"sticky"} top="0px" zIndex={1000} display={"flex"} padding={"13px"} width="100%" margin={"auto"}>
 
                 <Box display={"flex"}>
-                    <Text fontSize={"22px"} fontWeight={700} color="#0fe43d">UMER</Text>
+                    <Text fontSize={"22px"} fontWeight={700} color="#64d87d">UMER</Text>
                     <Text fontSize={"22px"} fontWeight={700} color="#e21717">AHMAD</Text>
                 </Box>
 
