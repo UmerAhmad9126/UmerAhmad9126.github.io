@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1bdb5b96.css",
-    "main.js": "/static/js/main.c4d2aa91.js",
+    "main.css": "/static/css/main.a1bf7d67.css",
+    "main.js": "/static/js/main.9e8ec73a.js",
     "static/media/myntra.png": "/static/media/myntra.093c0f390e1095b7c1ab.png",
     "static/media/gymwolf.png": "/static/media/gymwolf.c2091061cc12091c6015.png",
     "static/media/about.gif": "/static/media/about.7835ddbfd9d23e02b60c.gif",
@@ -20,11 +20,11 @@
     "static/media/html.png": "/static/media/html.5139eb66b02855a1c137.png",
     "static/media/js.png": "/static/media/js.b593320c32e34a23f324.png",
     "index.html": "/index.html",
-    "main.1bdb5b96.css.map": "/static/css/main.1bdb5b96.css.map",
-    "main.c4d2aa91.js.map": "/static/js/main.c4d2aa91.js.map"
+    "main.a1bf7d67.css.map": "/static/css/main.a1bf7d67.css.map",
+    "main.9e8ec73a.js.map": "/static/js/main.9e8ec73a.js.map"
   },
   "entrypoints": [
-    "static/css/main.1bdb5b96.css",
-    "static/js/main.c4d2aa91.js"
+    "static/css/main.a1bf7d67.css",
+    "static/js/main.9e8ec73a.js"
   ]
 }
