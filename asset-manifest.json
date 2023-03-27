@@ -1,12 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.1bdb5b96.css",
-    "main.js": "/static/js/main.b4ae4029.js",
+    "main.js": "/static/js/main.c4d2aa91.js",
     "static/media/myntra.png": "/static/media/myntra.093c0f390e1095b7c1ab.png",
+    "static/media/gymwolf.png": "/static/media/gymwolf.c2091061cc12091c6015.png",
     "static/media/about.gif": "/static/media/about.7835ddbfd9d23e02b60c.gif",
     "static/media/profile-pic.png": "/static/media/profile-pic.3a910123d57d961b66f4.png",
+    "static/media/bestbuy.png": "/static/media/bestbuy.7a3bb41b72483fd8ccd4.png",
     "static/media/chakraui.png": "/static/media/chakraui.e4cb472ccaabf22affba.png",
     "static/media/Umer_Ahmad_Resume.pdf": "/static/media/Umer_Ahmad_Resume.8e365fd06b51073c066d.pdf",
+    "static/media/kimaye.png": "/static/media/kimaye.426acad25bba6ad3a53f.png",
     "static/media/ts.png": "/static/media/ts.ee72612b6c98066be530.png",
     "static/media/react.png": "/static/media/react.dceaa1723fa4b0f19ff5.png",
     "static/media/express.png": "/static/media/express.cca64e0f360897258ecb.png",
@@ -18,10 +21,10 @@
     "static/media/js.png": "/static/media/js.b593320c32e34a23f324.png",
     "index.html": "/index.html",
     "main.1bdb5b96.css.map": "/static/css/main.1bdb5b96.css.map",
-    "main.b4ae4029.js.map": "/static/js/main.b4ae4029.js.map"
+    "main.c4d2aa91.js.map": "/static/js/main.c4d2aa91.js.map"
   },
   "entrypoints": [
     "static/css/main.1bdb5b96.css",
-    "static/js/main.b4ae4029.js"
+    "static/js/main.c4d2aa91.js"
   ]
 }
