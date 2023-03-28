@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.a1bf7d67.css",
-    "main.js": "/static/js/main.9120f0ca.js",
+    "main.js": "/static/js/main.1b9f22f3.js",
     "static/media/myntra.png": "/static/media/myntra.093c0f390e1095b7c1ab.png",
     "static/media/gymwolf.png": "/static/media/gymwolf.c2091061cc12091c6015.png",
     "static/media/about.gif": "/static/media/about.7835ddbfd9d23e02b60c.gif",
+    "static/media/contacts.gif": "/static/media/contacts.b2397b1ea60f33e40e30.gif",
     "static/media/profile-pic.png": "/static/media/profile-pic.3a910123d57d961b66f4.png",
     "static/media/bestbuy.png": "/static/media/bestbuy.7a3bb41b72483fd8ccd4.png",
     "static/media/chakraui.png": "/static/media/chakraui.e4cb472ccaabf22affba.png",
@@ -21,10 +22,10 @@
     "static/media/js.png": "/static/media/js.b593320c32e34a23f324.png",
     "index.html": "/index.html",
     "main.a1bf7d67.css.map": "/static/css/main.a1bf7d67.css.map",
-    "main.9120f0ca.js.map": "/static/js/main.9120f0ca.js.map"
+    "main.1b9f22f3.js.map": "/static/js/main.1b9f22f3.js.map"
   },
   "entrypoints": [
     "static/css/main.a1bf7d67.css",
-    "static/js/main.9120f0ca.js"
+    "static/js/main.1b9f22f3.js"
   ]
 }
