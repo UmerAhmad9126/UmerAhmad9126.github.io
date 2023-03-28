@@ -7,13 +7,13 @@ const About = () => {
     return (
         <Box id="about" className='about section' w="90%" margin={"auto"} mt={"40px"} height="auto">
 
-            <Text textAlign={"center"} fontSize="50px" fontWeight={700} color="#f4e16a">About Me</Text>
+            <Text borderBottom={"3px solid #f4e16a"} textAlign={"center"} fontSize="50px" fontWeight={700} color="#f4e16a">About Me</Text>
 
             <SimpleGrid mt="40px" columns={{ base: 1, sm: 2, md: 2, lg: 2, xl: 2, "2xl": 2 }} spacing={8}>
                 <Box >
                     <Box maxW={"100%"} >
 
-                        <UnorderedList fontSize={"20px"} fontWeight={500} color={"#0fe4af"}>
+                        <UnorderedList id="user-detail-intro" fontSize={"20px"} fontWeight={500} color={"#0fe4af"}>
 
                             <ListItem mt="5px">An enthusiastic learner and A Full Stack Web Developer
                                 with skilled in React Js and Java Script.

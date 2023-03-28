@@ -14,7 +14,7 @@ const Home = () => {
                     </Box>
 
                     <Box mt="10px">
-                        <Text fontSize="50px" fontWeight={700} color={"#f4e16a"}>Umer Ahmad</Text>
+                        <Text id='user-detail-name' fontSize="50px" fontWeight={700} color={"#f4e16a"}>Umer Ahmad</Text>
                     </Box>
 
                     <Box mt="30px">
@@ -28,7 +28,7 @@ const Home = () => {
                             )
                         }
                     >
-                        <a id="resume-link-2" href={resume} download target="_blank" rel="noreferrer">
+                        <a id="resume-button-2" href={resume} download target="_blank" rel="noreferrer">
                             <Button className={styles.button} w={"230px"} colorScheme='green' variant='outline' fs="16px" fontWeight={600}>
                                 Download Resume
                             </Button>
@@ -37,7 +37,7 @@ const Home = () => {
                 </Box>
 
                 <Box className={styles.img} borderRadius={"5px"} margin={"auto"} maxw="400px">
-                    <Image className="home-img" w="400px" borderRadius={"5px"} src={img} alt="profile-pic" />
+                    <Image className="home-img" id={styles.profile} w="400px" borderRadius={"5px"} src={img} alt="profile-pic" />
                 </Box>
             </SimpleGrid>
         </Box>

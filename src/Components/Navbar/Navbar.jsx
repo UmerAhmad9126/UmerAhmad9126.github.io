@@ -6,7 +6,9 @@ import {
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import DrawerComponent from './Drawer';
 import styles from "./Navbar.module.css";
-import resume from "../Home/Umer_Ahmad_Resume.pdf"
+import resume from "../Home/Umer_Ahmad_Resume.pdf";
+import { Link } from "react-scroll"
+
 
 
 
@@ -19,32 +21,49 @@ export default function Navbar() {
             {/* Desktop Navbar */}
             <Box className={styles.desktop_navbar} padding={"20px"} w="100%" display="flex" justifyContent={"space-between"}>
 
-                <Box display={"flex"} justifyContent="center" alignItems={"center"}>
-                    <Text fontSize={"22px"} fontWeight={700} color="#f4e16a">UMER</Text>
-                    <Text fontSize={"22px"} fontWeight={700} color="#e21717">AHMAD</Text>
-                </Box>
+
+                <Link className='nav-link home' to="home" spy={true} smooth={true} offset={-130} duration={500}>
+                    <Box cursor={"pointer"} display={"flex"} justifyContent="center" alignItems={"center"}>
+                        <Text fontSize={"22px"} fontWeight={700} color="#f4e16a">UMER</Text>
+                        <Text fontSize={"22px"} fontWeight={700} color="#e21717">AHMAD</Text>
+                    </Box>
+                </Link>
+
 
 
                 <Box display={"flex"} gap="50px" justifyContent="center" alignItems={"center"}>
-                    <Box className='nav-link home'>
-                        <Text fontSize={"15px"} fontWeight={500}>HOME</Text>
-                    </Box>
 
-                    <Box className='nav-link about'>
-                        <Text fontSize={"15px"} fontWeight={500}>ABOUT</Text>
-                    </Box>
+                    <Link className='nav-link home' to="home" spy={true} smooth={true} offset={-130} duration={500} >
+                        <Box cursor={"pointer"}>
+                            <Text fontSize={"15px"} fontWeight={500}>HOME</Text>
+                        </Box>
+                    </Link>
 
-                    <Box className='nav-link skills'>
-                        <Text fontSize={"15px"} fontWeight={500}>SKILLS</Text>
-                    </Box>
+                    <Link className='nav-link about' to="about" spy={true} smooth={true} offset={-80} duration={500}>
+                        <Box cursor={"pointer"}>
+                            <Text fontSize={"15px"} fontWeight={500}>ABOUT</Text>
+                        </Box>
+                    </Link>
 
-                    <Box className='nav-link projects'>
-                        <Text fontSize={"15px"} fontWeight={500}>PROJECT</Text>
-                    </Box>
+                    <Link className='nav-link skills' to="skills" spy={true} smooth={true} offset={-80} duration={500}>
+                        <Box cursor={"pointer"}>
+                            <Text fontSize={"15px"} fontWeight={500}>SKILLS</Text>
+                        </Box>
+                    </Link>
 
-                    <Box className='nav-link contact'>
-                        <Text fontSize={"15px"} fontWeight={500}>CONTACT ME</Text>
-                    </Box>
+
+                    <Link className='nav-link projects' to="projects" spy={true} smooth={true} offset={-80} duration={500}>
+                        <Box cursor={"pointer"} >
+                            <Text fontSize={"15px"} fontWeight={500}>PROJECT</Text>
+                        </Box>
+                    </Link>
+
+                    <Link className='nav-link contact' to="contact" spy={true} smooth={true} offset={-80} duration={500}>
+                        <Box cursor={"pointer"} >
+                            <Text fontSize={"15px"} fontWeight={500}>CONTACT ME</Text>
+                        </Box>
+                    </Link>
+
 
                     <Box className='nav-link resume'
                         onClick={() =>
@@ -53,7 +72,7 @@ export default function Navbar() {
                             )
                         }
                     >
-                        <a id="resume-link-1" href={resume} download target="_blank" rel="noreferrer">
+                        <a id="resume-button-1" href={resume} download target="_blank" rel="noreferrer">
                             <Text fontSize={"15px"} fontWeight={500}>RESUME</Text>
                         </a>
                     </Box>
@@ -69,10 +88,13 @@ export default function Navbar() {
             {/* Mobile and Tab Navbar */}
             <Box bg="#b0c0bc" className={styles.mobile_navbar} justifyContent="space-between" position={"sticky"} top="0px" zIndex={1000} display={"flex"} padding={"13px"} width="100%" margin={"auto"}>
 
-                <Box display={"flex"}>
-                    <Text fontSize={"22px"} fontWeight={700} color="#f4e16a">UMER</Text>
-                    <Text fontSize={"22px"} fontWeight={700} color="#e21717">AHMAD</Text>
-                </Box>
+                <Link cursor="pointer" className='nav-link home' to="home" spy={true} smooth={true} offset={-160} duration={500}>
+                    <Box display={"flex"}>
+                        <Text fontSize={"22px"} fontWeight={700} color="#f4e16a">UMER</Text>
+                        <Text fontSize={"22px"} fontWeight={700} color="#e21717">AHMAD</Text>
+                    </Box>
+                </Link>
+
 
                 <Box display={"flex"} justifyContent="center" gap={"20px"} alignItems={"center"}>
                     <Box onClick={toggleColorMode}>

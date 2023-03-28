@@ -1,0 +1,26 @@
+.skillsAnime {
+    -webkit-animation: tilt-in-left-1 .6s cubic-bezier(.25, .46, .45, .94) both;
+    animation: tilt-in-left-1 .6s cubic-bezier(.25, .46, .45, .94) both
+}
+
+
+@keyframes tilt-in-left-1 {
+    0% {
+        transform: rotateX(-30deg) translateX(-300px) skewX(-30deg);
+        opacity: 0
+    }
+
+    100% {
+        transform: rotateX(0deg) translateX(0) skewX(0deg);
+        opacity: 1
+    }
+}
+
+
+.skillbox {
+    transition: transform 0.5s ease;
+}
+
+.skillbox:hover {
+    transform: scale(1.2);
+}

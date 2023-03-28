@@ -1,44 +1,32 @@
 .img {
-    animation: zoom-in 1s ease-in forwards;
+    position: relative;
+    animation-name: slide-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     cursor: pointer;
+    transition: transform 0.5s ease;
 }
 
-@keyframes zoom-in {
-    0% {
-        transform: scale(0.3);
+@keyframes slide-in {
+    from {
+        right: -100%;
     }
 
-    100% {
-        transform: scale(1);
-    }
-}
-
-.img:hover {
-    animation: shake 0.5s ease-out;
-}
-
-@keyframes shake {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    25% {
-        transform: rotate(10deg);
-    }
-
-    50% {
-        transform: rotate(-10deg);
-    }
-
-    75% {
-        transform: rotate(10deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
+    to {
+        right: 0%;
     }
 }
+
+
+#profile {
+    transition: transform 0.5s ease;
+}
+
+#profile:hover {
+    transform: scale(1.1);
+}
+
 
 .button {
     animation: pulse 1s infinite;
