@@ -9,10 +9,6 @@ import { FaGithubSquare } from 'react-icons/fa';
 import { BsBalloonHeartFill } from 'react-icons/bs';
 
 
-
-
-
-
 const Contacts = () => {
     return (
         <Box id="contact" w="90%" margin={"auto"} mt={"40px"} height="auto">
@@ -27,15 +23,15 @@ const Contacts = () => {
 
                 <Box>
                     <Box id="contact-phone">
-                        <Button mt="10px" leftIcon={<BiPhoneCall />} fontSize={"20px"} color="#e21717" colorScheme={"yellow"} h="60px" w="100%">Phone: +91 7903438621</Button>
+                        <Button mt="10px" leftIcon={<BiPhoneCall />} fontSize={"20px"} color="#e21717" colorScheme={"yellow"} h="60px" w="100%">+91 7903438621</Button>
                     </Box>
 
                     <Box id="contact-email">
-                        <Button mt="30px" leftIcon={<HiOutlineMail />} fontSize={"19px"} color="#e21717" colorScheme={"yellow"} h="60px" w="100%">Email: ahmadumer9126@gmail.com</Button>
+                        <Button mt="30px" leftIcon={<HiOutlineMail />} fontSize={"19px"} color="#e21717" colorScheme={"yellow"} h="60px" w="100%">ahmadumer9126@gmail.com</Button>
                     </Box>
 
                     <Box>
-                        <Button mt="30px" leftIcon={<MdLocationOn />} fontSize={"20px"} color="#e21717" colorScheme={"yellow"} h="60px" w="100%">Address: Purnea, Bihar</Button>
+                        <Button mt="30px" leftIcon={<MdLocationOn />} fontSize={"20px"} color="#e21717" colorScheme={"yellow"} h="60px" w="100%">Purnea, Bihar</Button>
                     </Box>
 
                     <Box id="contact-github">
