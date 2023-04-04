@@ -68,7 +68,7 @@ export default function DrawerComponent() {
 
                         <Divider />
                         <Box onClick={handleClick} className='nav-link resume'>
-                            <a id="resume-button-1" href={resume} download target="_blank" rel="noreferrer">
+                            <a href={resume} download target="_blank" rel="noreferrer">
                                 <Text onClick={onClose} padding="10px">RESUME</Text>
                             </a>
                         </Box>

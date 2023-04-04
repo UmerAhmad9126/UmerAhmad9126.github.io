@@ -28,11 +28,17 @@ const Home = () => {
                             )
                         }
                     >
-                        <a id="resume-button-2" href={resume} download target="_blank" rel="noreferrer">
-                            <Button className={styles.button} w={"230px"} colorScheme='green' variant='outline' fs="16px" fontWeight={600}>
+                        <Button className={styles.button} w={"230px"} colorScheme='green' variant='outline' fs="16px" fontWeight={600}>
+                            <a id="resume-button-2" href={resume} download target="_blank" rel="noreferrer">
                                 Download Resume
-                            </Button>
-                        </a>
+                            </a>
+                        </Button>
+
+                        {/* <Button className={styles.button} w={"230px"} colorScheme='green' variant='outline' fs="16px" fontWeight={600}>
+                            <a id="resume-button-2" href='https://drive.google.com/uc?export=download&id=1nvptm9d35XdSoHzWJkNmpZcC1r9MnHuW' download={resume} target="_blank" rel="noreferrer" >
+                                Download Resume
+                            </a>
+                        </Button> */}
                     </Box>
                 </Box>
 

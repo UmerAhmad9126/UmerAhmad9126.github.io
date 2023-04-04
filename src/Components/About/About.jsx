@@ -16,11 +16,11 @@ const About = () => {
                         <UnorderedList id="user-detail-intro" fontSize={"20px"} fontWeight={500} color={"#0fe4af"}>
 
                             <ListItem mt="5px">An enthusiastic learner and A Full Stack Web Developer
-                                with skilled in React Js and Java Script.
+                                skilled in Frontend and Backend.
                             </ListItem>
 
                             <ListItem mt="5px">1300+ hours of hands-on
-                                experience in coding and curiosity for exploring new boundaries
+                                experience in coding, curiosity for exploring new boundaries
                                 and manifesting skills for use in solving problems.
                             </ListItem>
 
@@ -29,7 +29,7 @@ const About = () => {
                             </ListItem>
 
                             <ListItem mt="5px">
-                                I built a number of web applications and 5 major projects. Learned a great deal about teamwork, leadership, and communication. After months of rigorous training, here I am looking for an opportunity as a full stack web developer.
+                                I built a number of web applications and 4 major projects. Learned a great deal about teamwork, leadership, and communication. After months of rigorous training, here I am looking for an opportunity as a full stack web developer.
                             </ListItem>
 
                         </UnorderedList>

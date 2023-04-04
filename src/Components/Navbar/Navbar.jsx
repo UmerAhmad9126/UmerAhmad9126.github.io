@@ -33,7 +33,7 @@ export default function Navbar() {
 
                 <Box display={"flex"} gap="50px" justifyContent="center" alignItems={"center"}>
 
-                    <Link className='nav-link home' to="home" spy={true} smooth={true} offset={-130} duration={500} >
+                    <Link to="home" spy={true} smooth={true} offset={-130} duration={500} >
                         <Box cursor={"pointer"}>
                             <Text fontSize={"15px"} fontWeight={500}>HOME</Text>
                         </Box>
@@ -72,9 +72,17 @@ export default function Navbar() {
                             )
                         }
                     >
-                        <a id="resume-button-1" href={resume} download target="_blank" rel="noreferrer">
-                            <Text fontSize={"15px"} fontWeight={500}>RESUME</Text>
-                        </a>
+                        <Text fontSize={"15px"} fontWeight={500}>
+                            <a id="resume-button-1" href={resume} download target="_blank" rel="noreferrer">
+                                RESUME
+                            </a>
+                        </Text>
+
+                        {/* <Text className='nav-link resume' fontSize={"15px"} fontWeight={500}>
+                            <a id="resume-button-1" href='https://drive.google.com/uc?export=download&id=1nvptm9d35XdSoHzWJkNmpZcC1r9MnHuW' download={resume} target="_blank" rel="noreferrer">
+                                RESUME
+                            </a>
+                        </Text> */}
                     </Box>
 
                     <Box onClick={toggleColorMode}>
@@ -88,7 +96,7 @@ export default function Navbar() {
             {/* Mobile and Tab Navbar */}
             <Box bg="#b0c0bc" className={styles.mobile_navbar} justifyContent="space-between" position={"sticky"} top="0px" zIndex={1000} display={"flex"} padding={"13px"} width="100%" margin={"auto"}>
 
-                <Link cursor="pointer" className='nav-link home' to="home" spy={true} smooth={true} offset={-160} duration={500}>
+                <Link cursor="pointer" to="home" spy={true} smooth={true} offset={-160} duration={500}>
                     <Box display={"flex"}>
                         <Text fontSize={"22px"} fontWeight={700} color="#f4e16a">UMER</Text>
                         <Text fontSize={"22px"} fontWeight={700} color="#e21717">AHMAD</Text>
