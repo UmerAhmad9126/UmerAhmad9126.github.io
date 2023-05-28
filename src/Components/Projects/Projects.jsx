@@ -5,7 +5,8 @@ import { Box, SimpleGrid, Text, Image, Button } from "@chakra-ui/react"
 import myntraImg from "./projectsImg/myntra.png"
 import gymwolfImg from "./projectsImg/gymwolf.png"
 import bestbuy from "./projectsImg/bestbuy.png"
-import kimaye from "./projectsImg/kimaye.png"
+import meesho from "./projectsImg/meesho.png"
+
 
 
 import html from "../Skills/skillsImg/html.png"
@@ -17,6 +18,8 @@ import chakraui from "../Skills/skillsImg/chakraui.png"
 import vercel from "../Skills/toolsImg/vercel.png"
 import git from "../Skills/toolsImg/git.png"
 import netlify from "../Skills/toolsImg/netlify.png"
+import express from "../Skills/skillsImg/express.png"
+import mongodb from "../Skills/skillsImg/mongo.png"
 
 import { BsGithub } from 'react-icons/bs';
 import { FaEye } from 'react-icons/fa';
@@ -35,6 +38,68 @@ export const Projects = () => {
             </Box>
 
             <SimpleGrid mt="40px" columns={{ base: 1, sm: 1, md: 2, lg: 2, xl: 2, "2xl": 2 }} spacing={8}>
+
+                <Box className='project-card'>
+                    <Box className={styles.boxShadow} border={"5px solid #f4e16a"} cursor={"pointer"} w="100%" height={"auto"} borderRadius="20px">
+                        <Box>
+                            <Image className={styles.img} margin={"auto"} mt="30px" w="90%" src={meesho} alt="meesho-img" />
+                        </Box>
+
+                        <Box>
+                            <Text className='project-title' mt="10px" fontSize={"25px"} fontWeight={500} textAlign={"center"} color={"#f4e16a"}>Meesho.com</Text>
+                            <Text className='project-description' margin={"auto"} mt="10px" w="90%" fontSize={"17px"} fontWeight={500} textAlign={"center"} color={"#0fe4af"}>Meesho is a social E- commerce platform based in India that
+                                allows individuals to start their own online businesses by
+                                selling products to their social network.</Text>
+                            <Text className='project-tech-stack' mt="10px" fontSize={"25px"} fontWeight={500} textAlign={"center"} color={"#f4e16a"}>Tech Stack</Text>
+                        </Box>
+
+                        <SimpleGrid className='skills-card' margin={"auto"} w="90%" mt="20px" columns={{ base: 3, sm: 3, md: 4, lg: 5, xl: 5, "2xl": 5 }} spacing={2}>
+                            <Box className={styles.img} w="auto" h="auto"  >
+                                <Image className="skills-card-img" margin={"auto"} w="50px" h="50px" src={react} alt="react" />
+                                <Text className="skills-card-name" fontSize={"14px"} fontWeight={500} color={"#0fe4af"} textAlign="center" mt="10px" >REACT</Text>
+                            </Box>
+
+                            <Box className={styles.img} w="auto" h="auto">
+                                <Image className="skills-card-img" margin={"auto"} w="50px" h="50px" src={redux} alt="redux" />
+                                <Text className="skills-card-name" fontSize={"14px"} fontWeight={500} color={"#0fe4af"} textAlign="center" mt="10px" >REDUX</Text>
+                            </Box>
+
+                            <Box className={styles.img} w="auto" h="auto">
+                                <Image className="skills-card-img" margin={"auto"} w="50px" h="50px" src={chakraui} alt="chakraui" />
+                                <Text className="skills-card-name" fontSize={"14px"} fontWeight={500} color={"#0fe4af"} textAlign="center" mt="10px" >CHAKRA UI</Text>
+                            </Box>
+
+                            <Box className={styles.img} w="auto" h="auto">
+                                <Image className="skills-card-img" margin={"auto"} w="50px" h="50px" src={express} alt="express" />
+                                <Text className="skills-card-name" fontSize={"14px"} fontWeight={500} color={"#0fe4af"} textAlign="center" mt="10px" >EXPRESS JS</Text>
+                            </Box>
+
+                            <Box className={styles.img} w="auto" h="auto">
+                                <Image className="skills-card-img" margin={"auto"} w="50px" h="50px" src={mongodb} alt="mongodb" />
+                                <Text className="skills-card-name" fontSize={"14px"} fontWeight={500} color={"#0fe4af"} textAlign="center" mt="10px" >MONGO DB</Text>
+                            </Box>
+
+                        </SimpleGrid>
+
+                        <Box mb={"10px"} mt="10px" display={"flex"} justifyContent="center" alignContent={"center"} gap="20px">
+                            <Box className='project-github-link'>
+                                <Button className={styles.img} onClick={() =>
+                                    window.open(
+                                        "https://github.com/puja2795/meesho"
+                                    )
+                                } leftIcon={<BsGithub />} w="140px" color={"#f4e16a"} colorScheme="yellow" variant={"outline"}>GITHUB</Button>
+                            </Box>
+
+                            <Box className='project-deployed-link'>
+                                <Button className={styles.img} onClick={() =>
+                                    window.open(
+                                        "https://frontend-ochre-beta.vercel.app/"
+                                    )
+                                } leftIcon={<FaEye size={23} />} w="140px" color={"#f4e16a"} colorScheme="yellow" variant={"outline"}>LIVE</Button>
+                            </Box>
+                        </Box>
+                    </Box>
+                </Box>
 
                 <Box className='project-card'>
                     <Box className={styles.boxShadow} border={"5px solid #f4e16a"} cursor={"pointer"} w="100%" height={"auto"} borderRadius="20px">
@@ -216,68 +281,6 @@ export const Projects = () => {
                         </Box>
                     </Box>
                 </Box>
-
-
-                <Box className='project-card'>
-                    <Box className={styles.boxShadow} border={"5px solid #f4e16a"} cursor={"pointer"} w="100%" height={"auto"} borderRadius="20px">
-                        <Box>
-                            <Image className={styles.img} margin={"auto"} mt="30px" w="90%" src={kimaye} alt="kimaye-img" />
-                        </Box>
-
-                        <Box>
-                            <Text className='project-title' mt="10px" fontSize={"25px"} fontWeight={500} textAlign={"center"} color={"#f4e16a"}>Kimaye.com</Text>
-                            <Text className='project-description' margin={"auto"} mt="10px" w="90%" fontSize={"17px"} fontWeight={500} textAlign={"center"} color={"#0fe4af"}>Kimaye is consistently delivering the safest and highest-quality fruits at your doorstep. Roots of kimaye lies in the principles of cooperation and partnership.</Text>
-                            <Text className='project-tech-stack' mt="10px" fontSize={"25px"} fontWeight={500} textAlign={"center"} color={"#f4e16a"}>Tech Stack</Text>
-                        </Box>
-
-                        <SimpleGrid className='skills-card' margin={"auto"} w="90%" mt="20px" columns={{ base: 3, sm: 3, md: 4, lg: 5, xl: 5, "2xl": 5 }} spacing={2}>
-                            <Box className={styles.img} w="auto" h="auto"  >
-                                <Image className="skills-card-img" margin={"auto"} w="50px" h="50px" src={html} alt="html" />
-                                <Text className="skills-card-name" fontSize={"14px"} fontWeight={500} color={"#0fe4af"} textAlign="center" mt="10px" >HTML</Text>
-                            </Box>
-
-                            <Box className={styles.img} w="auto" h="auto">
-                                <Image className="skills-card-img" margin={"auto"} w="50px" h="50px" src={css} alt="css" />
-                                <Text className="skills-card-name" fontSize={"14px"} fontWeight={500} color={"#0fe4af"} textAlign="center" mt="10px" >CSS</Text>
-                            </Box>
-
-                            <Box className={styles.img} w="auto" h="auto">
-                                <Image className="skills-card-img" margin={"auto"} w="50px" h="50px" src={js} alt="js" />
-                                <Text className="skills-card-name" fontSize={"14px"} fontWeight={500} color={"#0fe4af"} textAlign="center" mt="10px" >JAVASCRIPT</Text>
-                            </Box>
-
-                            <Box className={styles.img} w="auto" h="auto">
-                                <Image className="skills-card-img" margin={"auto"} w="50px" h="50px" src={git} alt="git" />
-                                <Text className="skills-card-name" fontSize={"14px"} fontWeight={500} color={"#0fe4af"} textAlign="center" mt="10px" >GIT</Text>
-                            </Box>
-
-                            <Box className={styles.img} w="auto" h="auto">
-                                <Image className="skills-card-img" margin={"auto"} w="50px" h="50px" src={netlify} alt="netlify" />
-                                <Text className="skills-card-name" fontSize={"14px"} fontWeight={500} color={"#0fe4af"} textAlign="center" mt="10px" >NETLIFY</Text>
-                            </Box>
-
-                        </SimpleGrid>
-
-                        <Box mb={"10px"} mt="10px" display={"flex"} justifyContent="center" alignContent={"center"} gap="20px">
-                            <Box className='project-github-link'>
-                                <Button className={styles.img} onClick={() =>
-                                    window.open(
-                                        "https://github.com/UmerAhmad9126/overconfident-unit-8852"
-                                    )
-                                } leftIcon={<BsGithub />} w="140px" color={"#f4e16a"} colorScheme="yellow" variant={"outline"}>GITHUB</Button>
-                            </Box>
-
-                            <Box className='project-deployed-link'>
-                                <Button className={styles.img} onClick={() =>
-                                    window.open(
-                                        "https://timely-dragon-746e42.netlify.app/"
-                                    )
-                                } leftIcon={<FaEye size={23} />} w="140px" color={"#f4e16a"} colorScheme="yellow" variant={"outline"}>LIVE</Button>
-                            </Box>
-                        </Box>
-                    </Box>
-                </Box>
-
 
             </SimpleGrid>
 

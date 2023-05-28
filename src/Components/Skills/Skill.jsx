@@ -90,7 +90,7 @@ const Skills = () => {
 
                 <Box className={`skills-card ${styles.skillbox}`} w="150px" h="150px" borderRadius={"20px"} margin={"auto"} cursor="pointer" border={"5px solid #f4e16a"}>
                     <Image margin={"auto"} mt="10px" className="skills-card-img" w="80px" h="80px" src={expressjs} alt="express" />
-                    <Text className="skills-card-name" fontSize={"20px"} fontWeight={500} color={"#0fe4af"} textAlign="center" mt="20px" >EXPRES JS</Text>
+                    <Text className="skills-card-name" fontSize={"20px"} fontWeight={500} color={"#0fe4af"} textAlign="center" mt="20px" >EXPRESS JS</Text>
                 </Box>
 
                 <Box className={`skills-card ${styles.skillbox}`} w="150px" h="150px" borderRadius={"20px"} margin={"auto"} cursor="pointer" border={"5px solid #f4e16a"}>
