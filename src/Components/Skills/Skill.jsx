@@ -34,11 +34,10 @@ import Fade from 'react-reveal/Fade';
 const Skills = () => {
     return (
         <Box id="skills" w="90%" margin={"auto"} mt={"40px"} height="auto">
-            <Fade left cascade>
-                <Box borderBottom={"3px solid #f4e16a"}>
-                    <Text textAlign={"center"} fontSize="50px" fontWeight={700} color="#f4e16a">Technical Skills</Text>
-                </Box>
-            </Fade>
+
+            <Box borderBottom={"3px solid #f4e16a"}>
+                <Text textAlign={"center"} fontSize="50px" fontWeight={700} color="#f4e16a">Technical Skills</Text>
+            </Box>
 
             <Fade left cascade>
                 <SimpleGrid className={styles.skillsAnime} mt="40px" columns={{ base: 2, sm: 3, md: 3, lg: 6, xl: 6, "2xl": 6 }} spacing={8}>
@@ -105,13 +104,11 @@ const Skills = () => {
                 </SimpleGrid>
             </Fade>
 
-            <Fade left cascade>
-                <Box borderBottom={"3px solid #f4e16a"} mt="40px">
-                    <Text textAlign={"center"} fontSize="50px" fontWeight={700} color="#f4e16a">Other Tools</Text>
-                </Box>
-            </Fade>
+            <Box borderBottom={"3px solid #f4e16a"} mt="40px">
+                <Text textAlign={"center"} fontSize="50px" fontWeight={700} color="#f4e16a">Other Tools</Text>
+            </Box>
 
-            <Fade left cascade>
+            <Fade right cascade>
                 <SimpleGrid className={styles.skillsAnime} mt="40px" columns={{ base: 2, sm: 3, md: 3, lg: 6, xl: 6, "2xl": 6 }} spacing={8}>
                     <Box className={`skills-card ${styles.skillbox}`} w="150px" h="150px" borderRadius={"20px"} margin={"auto"} cursor="pointer" border={"5px solid #f4e16a"} >
                         <Image margin={"auto"} mt="10px" className="skills-card-img" w="80px" h="80px" src={canva} alt="canva" />

@@ -8,6 +8,8 @@ import { BsLinkedin } from 'react-icons/bs';
 import { FaGithubSquare } from 'react-icons/fa';
 import { BsBalloonHeartFill } from 'react-icons/bs';
 import ContactForm from './ContactsFrom';
+import Fade from 'react-reveal/Fade';
+
 
 
 const Contacts = () => {
@@ -18,46 +20,57 @@ const Contacts = () => {
             </Box>
 
             <SimpleGrid mt="40px" columns={{ base: 1, sm: 1, md: 2, lg: 2, xl: 2, "2xl": 2 }} spacing={8}>
-                <Box>
-                    {/* <Image borderRadius={"5px"} src={contactsImg} alt="contact" /> */}
-                    <ContactForm />
-                </Box>
-
-                <Box>
-                    <Box id="contact-phone">
-                        <Button mt="10px" leftIcon={<BiPhoneCall />} fontSize={"20px"} color="#e21717" colorScheme={"yellow"} h="60px" w="100%">+91 7903438621</Button>
-                    </Box>
-
-                    <Box id="contact-email">
-                        <Button mt="30px" leftIcon={<HiOutlineMail />} fontSize={"19px"} color="#e21717" colorScheme={"yellow"} h="60px" w="100%">ahmadumer9126@gmail.com</Button>
-                    </Box>
-
+                <Fade left cascade>
                     <Box>
-                        <Button mt="30px" leftIcon={<MdLocationOn />} fontSize={"20px"} color="#e21717" colorScheme={"yellow"} h="60px" w="100%">Purnea, Bihar</Button>
+                        {/* <Image borderRadius={"5px"} src={contactsImg} alt="contact" /> */}
+                        <ContactForm />
                     </Box>
-
-                    <Box id="contact-github">
-                        <Button
-
-                            onClick={() =>
-                                window.open(
-                                    "https://github.com/UmerAhmad9126"
-                                )
-                            }
-                            mt="30px" leftIcon={<FaGithubSquare />} fontSize={"20px"} color="#e21717" colorScheme={"yellow"} h="60px" w="100%">Github</Button>
-                    </Box>
+                </Fade>
 
 
-                    <Box id="contact-linkedin">
-                        <Button
-                            onClick={() =>
-                                window.open(
-                                    "https://www.linkedin.com/in/umer-ahmad-515437217/"
-                                )
-                            }
-                            mt="30px" leftIcon={<BsLinkedin />} fontSize={"20px"} color="#e21717" colorScheme={"yellow"} h="60px" w="100%">Linkedin</Button>
-                    </Box>
+                <Box>
+                    <Fade right cascade>
+                        <Box id="contact-phone">
+                            <Button mt="10px" leftIcon={<BiPhoneCall />} fontSize={"20px"} color="#e21717" colorScheme={"yellow"} h="60px" w="100%">+91 7903438621</Button>
+                        </Box>
+                    </Fade>
 
+                    <Fade right cascade>
+                        <Box id="contact-email">
+                            <Button mt="30px" leftIcon={<HiOutlineMail />} fontSize={"19px"} color="#e21717" colorScheme={"yellow"} h="60px" w="100%">ahmadumer9126@gmail.com</Button>
+                        </Box>
+                    </Fade>
+
+                    <Fade right cascade>
+                        <Box>
+                            <Button mt="30px" leftIcon={<MdLocationOn />} fontSize={"20px"} color="#e21717" colorScheme={"yellow"} h="60px" w="100%">Purnea, Bihar</Button>
+                        </Box>
+                    </Fade>
+
+                    <Fade right cascade>
+                        <Box id="contact-github">
+                            <Button
+
+                                onClick={() =>
+                                    window.open(
+                                        "https://github.com/UmerAhmad9126"
+                                    )
+                                }
+                                mt="30px" leftIcon={<FaGithubSquare />} fontSize={"20px"} color="#e21717" colorScheme={"yellow"} h="60px" w="100%">Github</Button>
+                        </Box>
+                    </Fade>
+
+                    <Fade right cascade>
+                        <Box id="contact-linkedin">
+                            <Button
+                                onClick={() =>
+                                    window.open(
+                                        "https://www.linkedin.com/in/umer-ahmad-515437217/"
+                                    )
+                                }
+                                mt="30px" leftIcon={<BsLinkedin />} fontSize={"20px"} color="#e21717" colorScheme={"yellow"} h="60px" w="100%">Linkedin</Button>
+                        </Box>
+                    </Fade>
                 </Box>
             </SimpleGrid>
 

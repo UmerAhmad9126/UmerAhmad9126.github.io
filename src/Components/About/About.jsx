@@ -6,13 +6,13 @@ import Fade from 'react-reveal/Fade';
 
 const About = () => {
     return (
-        <Fade left cascade>
 
-            <Box id="about" className='about section' w="90%" margin={"auto"} mt={"40px"} height="auto">
+        <Box id="about" className='about section' w="90%" margin={"auto"} mt={"40px"} height="auto">
 
-                <Text borderBottom={"3px solid #f4e16a"} textAlign={"center"} fontSize="50px" fontWeight={700} color="#f4e16a">About Me</Text>
+            <Text borderBottom={"3px solid #f4e16a"} textAlign={"center"} fontSize="50px" fontWeight={700} color="#f4e16a">About Me</Text>
 
-                <SimpleGrid mt="40px" columns={{ base: 1, sm: 2, md: 2, lg: 2, xl: 2, "2xl": 2 }} spacing={8}>
+            <SimpleGrid mt="40px" columns={{ base: 1, sm: 2, md: 2, lg: 2, xl: 2, "2xl": 2 }} spacing={8}>
+                <Fade left cascade>
                     <Box >
                         <Box maxW={"100%"} >
 
@@ -38,13 +38,17 @@ const About = () => {
                             </UnorderedList>
                         </Box>
                     </Box>
+                </Fade>
 
+                <Fade right cascade>
                     <Box borderRadius={"5px"} margin={"auto"} >
                         <Image className="" w="100%" height={"100%"} borderRadius={"5px"} src={img} alt="gifs" />
                     </Box>
-                </SimpleGrid>
-            </Box>
-        </Fade>
+                </Fade>
+
+            </SimpleGrid>
+
+        </Box >
     )
 }
 
