@@ -1,12 +1,13 @@
-import { Box, SimpleGrid, Text, Image, Button } from '@chakra-ui/react'
+import { Box, SimpleGrid, Text, Button } from '@chakra-ui/react'
 import React from 'react'
-import contactsImg from "./contacts.gif"
+// import contactsImg from "./contacts.gif"
 import { BiPhoneCall } from 'react-icons/bi';
 import { HiOutlineMail } from 'react-icons/hi';
 import { MdLocationOn } from 'react-icons/md';
 import { BsLinkedin } from 'react-icons/bs';
 import { FaGithubSquare } from 'react-icons/fa';
 import { BsBalloonHeartFill } from 'react-icons/bs';
+import ContactForm from './ContactsFrom';
 
 
 const Contacts = () => {
@@ -18,7 +19,8 @@ const Contacts = () => {
 
             <SimpleGrid mt="40px" columns={{ base: 1, sm: 1, md: 2, lg: 2, xl: 2, "2xl": 2 }} spacing={8}>
                 <Box>
-                    <Image borderRadius={"5px"} src={contactsImg} alt="contact" />
+                    {/* <Image borderRadius={"5px"} src={contactsImg} alt="contact" /> */}
+                    <ContactForm />
                 </Box>
 
                 <Box>

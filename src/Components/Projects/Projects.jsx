@@ -6,6 +6,8 @@ import myntraImg from "./projectsImg/myntra.png"
 import gymwolfImg from "./projectsImg/gymwolf.png"
 import bestbuy from "./projectsImg/bestbuy.png"
 import meesho from "./projectsImg/meesho.png"
+import Fade from 'react-reveal/Fade';
+
 
 
 
@@ -31,7 +33,9 @@ import styles from "./projects.module.css";
 
 export const Projects = () => {
     return (
+
         <Box className={styles.projectsAnime} id="projects" w="90%" margin={"auto"} mt={"40px"} height="auto">
+
 
             <Box borderBottom={"3px solid #f4e16a"}>
                 <Text textAlign={"center"} fontSize="50px" fontWeight={700} color="#f4e16a">Projects</Text>
