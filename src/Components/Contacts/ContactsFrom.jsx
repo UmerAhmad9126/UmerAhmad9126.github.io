@@ -23,6 +23,7 @@ import { MdEmail, MdOutlineEmail } from 'react-icons/md';
 
 
 export default function ContactFormWithSocialButtons() {
+    
     const { hasCopied, onCopy } = useClipboard('ahmadumer9126@gmail.com');
 
     return (
@@ -144,7 +145,9 @@ export default function ContactFormWithSocialButtons() {
                         </Stack>
                     </VStack>
                 </Box>
+                
             </Box>
+
         </Flex>
     );
 }

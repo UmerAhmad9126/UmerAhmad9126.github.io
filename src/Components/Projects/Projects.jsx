@@ -99,7 +99,7 @@ export const Projects = () => {
                                 <Box className='project-deployed-link'>
                                     <Button className={styles.img} onClick={() =>
                                         window.open(
-                                            "https://frontend-ochre-beta.vercel.app/"
+                                            "https://shop-on-three.vercel.app/"
                                         )
                                     } leftIcon={<FaEye size={23} />} w="140px" color={"#f4e16a"} colorScheme="yellow" variant={"outline"}>LIVE</Button>
                                 </Box>
