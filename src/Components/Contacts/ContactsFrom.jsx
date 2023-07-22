@@ -134,7 +134,7 @@ export default function ContactFormWithSocialButtons() {
                                 shadow="base">
                                 <VStack spacing={2}>
 
-                                    <form ref={form}>
+                                    <form ref={form} onSubmit={sendEmail}>
                                         <FormControl isRequired>
                                             <FormLabel>Name</FormLabel>
                                             <InputGroup>
@@ -177,14 +177,24 @@ export default function ContactFormWithSocialButtons() {
                                                 </Button>
 
                                             ) : (
-                                                <Button
-                                                    fontSize={"22px"} color="#e21717" colorScheme={"yellow"}
+                                                // <Button
+                                                //     fontSize={"22px"} color="#e21717" colorScheme={"yellow"}
+                                                //     width={"100%"}
+                                                //     cursor={"pointer"}
+                                                //     onClick={sendEmail}
+                                                // >
+                                                //     Send Message
+                                                // </Button>
+                                                <Input
+                                                    type='Submit'
+                                                    fontSize={"22px"}
+                                                    color="#e21717"
+                                                    bg={"#f4e16a"}
                                                     width={"100%"}
                                                     cursor={"pointer"}
-                                                    onClick={sendEmail}
-                                                >
-                                                    Send Message
-                                                </Button>
+                                                    value={"Send Message"}
+                                                    textAlign="center"
+                                                />
                                             )
                                         }
                                     </form>
