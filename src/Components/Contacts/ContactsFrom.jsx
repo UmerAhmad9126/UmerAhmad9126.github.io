@@ -14,17 +14,49 @@ import {
     Tooltip,
     useClipboard,
     useColorModeValue,
+    useToast,
     VStack,
 } from '@chakra-ui/react';
-import React from 'react';
-import { BsGithub, BsLinkedin, BsPerson} from 'react-icons/bs';
+import React, { useState } from 'react';
+import { BsGithub, BsLinkedin, BsPerson } from 'react-icons/bs';
 import { MdEmail, MdOutlineEmail } from 'react-icons/md';
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 
 
 
 export default function ContactFormWithSocialButtons() {
-    
+
     const { hasCopied, onCopy } = useClipboard('ahmadumer9126@gmail.com');
+    const form = useRef();
+    const toast = useToast();
+    const [loading, setLoading] = useState(false);
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        setLoading(true)
+        emailjs.sendForm('service_gfa9iqn', 'template_susy3db', form.current, 'xulTpJyLjOw3pnwX4')
+            .then((result) => {
+                console.log(result.text);
+                setLoading(false);
+                toast({
+                    position: 'top',
+                    title: `Thank You! I will get back to you as soon as possible`,
+                    status: "success",
+                    isClosable: true,
+                })
+            }, (error) => {
+                console.log(error.text);
+                setLoading(false);
+                toast({
+                    position: 'top',
+                    title: `Something Went Wrong`,
+                    status: "error",
+                    isClosable: true,
+                })
+            });
+    };
 
     return (
         <Flex
@@ -101,51 +133,67 @@ export default function ContactFormWithSocialButtons() {
                                 color={useColorModeValue('gray.700', 'whiteAlpha.900')}
                                 shadow="base">
                                 <VStack spacing={2}>
-                                    <FormControl isRequired>
-                                        <FormLabel>Name</FormLabel>
 
-                                        <InputGroup>
-                                            <InputLeftElement children={<BsPerson />} />
-                                            <Input type="text" name="name" placeholder="Your Name" />
-                                        </InputGroup>
-                                    </FormControl>
+                                    <form ref={form}>
+                                        <FormControl isRequired>
+                                            <FormLabel>Name</FormLabel>
+                                            <InputGroup>
+                                                <InputLeftElement children={<BsPerson />} />
+                                                <Input type="text" name="to_name" placeholder="Your Name" />
+                                            </InputGroup>
+                                        </FormControl>
 
-                                    <FormControl isRequired>
-                                        <FormLabel>Email</FormLabel>
+                                        <FormControl isRequired>
+                                            <FormLabel>Email</FormLabel>
 
-                                        <InputGroup>
-                                            <InputLeftElement children={<MdOutlineEmail />} />
-                                            <Input
-                                                type="email"
-                                                name="email"
-                                                placeholder="Your Email"
+                                            <InputGroup>
+                                                <InputLeftElement children={<MdOutlineEmail />} />
+                                                <Input
+                                                    type="email"
+                                                    name="from_name"
+                                                    placeholder="Your Email"
+                                                />
+                                            </InputGroup>
+                                        </FormControl>
+
+                                        <FormControl isRequired>
+                                            <FormLabel>Message</FormLabel>
+
+                                            <Textarea
+                                                name="message"
+                                                placeholder="Your Message"
+                                                rows={6}
+                                                resize="none"
                                             />
-                                        </InputGroup>
-                                    </FormControl>
+                                        </FormControl>
+                                        {
+                                            loading ? (
+                                                <Button
+                                                    isLoading
+                                                    fontSize={"22px"} color="#e21717" colorScheme={"yellow"}
+                                                    width={"100%"}
+                                                    cursor={"pointer"}
+                                                >
+                                                </Button>
 
-                                    <FormControl isRequired>
-                                        <FormLabel>Message</FormLabel>
-
-                                        <Textarea
-                                            name="message"
-                                            placeholder="Your Message"
-                                            rows={6}
-                                            resize="none"
-                                        />
-                                    </FormControl>
-
-                                    <Button
-                                        fontSize={"20px"} color="#e21717" colorScheme={"yellow"}
-                                        width={"100%"}
-                                    >
-                                        Send Message
-                                    </Button>
+                                            ) : (
+                                                <Button
+                                                    fontSize={"22px"} color="#e21717" colorScheme={"yellow"}
+                                                    width={"100%"}
+                                                    cursor={"pointer"}
+                                                    onClick={sendEmail}
+                                                >
+                                                    Send Message
+                                                </Button>
+                                            )
+                                        }
+                                    </form>
                                 </VStack>
                             </Box>
                         </Stack>
                     </VStack>
                 </Box>
-                
+
             </Box>
 
         </Flex>
