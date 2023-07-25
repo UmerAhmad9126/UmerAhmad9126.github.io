@@ -43,7 +43,7 @@ const Contacts = () => {
 
                     <Fade right cascade>
                         <Box>
-                            <Button mt="30px" leftIcon={<MdLocationOn />} fontSize={"20px"} color="#e21717" colorScheme={"yellow"} h="60px" w="100%">Purnea, Bihar</Button>
+                            <Button mt="30px" leftIcon={<MdLocationOn />} fontSize={"20px"} color="#e21717" colorScheme={"yellow"} h="60px" w="100%">Delhi, India</Button>
                         </Box>
                     </Fade>
 
